@@ -1,0 +1,190 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initia-scale=1.0">
+        <title>
+            Home
+        </title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header>
+            <h1>Welcome to My Website</h1>
+        </header>
+        <main class="form-container">
+            <h2>Registration and Survey Form</h2>
+
+            <form action="#" method="POST" enctype="multipart/form-data">
+             <div class="form-group">
+                 <label for="">Name</label>
+                 <input type="text" id="fullname" name="fullname" placeholder="Name" required>
+             </div>   
+             <div class="form-group">
+                 <label for="">Email Address *</label>
+                 <input type="email" id="fullname" name="fullname" placeholder="xyz@gmail.com" required>
+             </div>   
+             <div class="form-group">
+                 <label for="">Password *</label>
+                 <input type="password" minlength="8" id="fullname" name="fullname" placeholder="Min. 8 characters" required>
+             </div>   
+
+             <div class="form-row">
+                <div class="form-group">
+                    <label for="phone"> phone number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 8750076726">
+                </div>
+                <div class="form-group">
+                    <label for="website">Portfolio URL</label>
+                    <input type="url" id="website" name="website" placeholder="https://example.com">
+                </div>
+             </div>
+             <div class="form-row">
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" min="18" max="100" value="25">
+                </div>
+                <div class="form-group">
+                    <label for="age">Date of Birth</label>
+                    <input type="date" id="dob" name="dob">
+                </div>
+                <div class="form-group">
+                    <label for="appt">Preferred Time</label>
+                    <input type="time" id="appt" name="appt">
+                </div>
+             </div>
+             <div class="form-row">
+                <div class="form-group">
+                    <label for="favcolor">Theme Color</label>
+                    <input type="color" id="favcolor" name="favcolor" value="#2563eb">
+                </div>
+                <div class="form-group">
+                    <label for="experience">Experience Level (1-10)</label>
+                    <input type="range" id="experience" name="experience" min="1" max="10" value="5">
+                </div>
+             </div>
+
+                   <!-- Dropdown Select -->
+      <div class="form-group">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="">-- Select a country --</option>
+          <option value="in">India</option>
+          <option value="us">United States</option>
+          <option value="uk">United Kingdom</option>
+        </select>
+      </div>
+
+      <!-- Radio Buttons (Single Choice) -->
+      <fieldset class="form-group">
+        <legend>Account Type</legend>
+        <label class="inline-label">
+          <input type="radio" name="account_type" value="personal" checked> Personal
+        </label>
+        <label class="inline-label">
+          <input type="radio" name="account_type" value="business"> Business
+        </label>
+      </fieldset>
+
+      <!-- Checkboxes (Multiple Choices) -->
+      <fieldset class="form-group">
+        <legend>Interests</legend>
+        <label class="inline-label">
+          <input type="checkbox" name="interests" value="coding"> Web Development
+        </label>
+        <label class="inline-label">
+          <input type="checkbox" name="interests" value="design"> UI/UX Design
+        </label>
+        <label class="inline-label">
+          <input type="checkbox" name="interests" value="ai"> Artificial Intelligence
+        </label>
+      </fieldset>
+
+      <!-- File Upload -->
+      <div class="form-group">
+        <label for="resume">Upload Resume (PDF/DOC)</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+      </div>
+
+      <!-- Multi-line Textarea -->
+      <div class="form-group">
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself..."></textarea>
+      </div>
+
+      <!-- Submit & Reset Buttons -->
+      <div class="button-group">
+        <button type="submit" class="btn-submit">Submit Form</button>
+        <button type="reset" class="btn-reset">Reset</button>
+      </div>
+
+<!-- 
+            <br><br>
+
+            <label for="">Father</label>
+            <input type="text">
+            <br><br>
+
+            <label for="">Age</label>
+            <input type="number">
+            <br><br>
+
+            <label for="">Gender</label>
+            <input type="radio">Male
+            <input type="radio">Female
+            <input type="radio">Other
+            <br><br>
+
+            <label for="">Qualification</label>
+            <input type="checkbox">10<sup>th</sup>
+            <input type="checkbox">12<sup>th</sup>
+            <input type="checkbox">Graduate
+
+            <br><br>
+
+            <label for="">Country</label>
+            <select name="" id="">
+                <option value="" disabled selected>select</option>
+                <option value="">India</option>
+                <option value="">United States</option>
+                <option value="">Pakistan</option>
+                <option value="">Malesia</option>
+            </select>
+            <br><br>
+
+            <label for="">State</label>
+            <select name="" id="">
+                <option value="" disabled selected>select</option>
+                <option value="">delhi</option>
+                <option value="">Uttar Pradesh</option>
+                <option value="">Madhya Pradesh</option>
+                <option value="">Jharkhand</option>
+            </select>
+            <br><br>
+
+            <label for="">City</label>
+            <select name="" id="">
+                <option value="" disabled selected>select</option>
+                <option value="">North East Delhi</option>
+                <option value="">North West Delhi</option>
+                <option value="">South Delhi</option>
+                <option value="">Old Delhi</option>
+            </select>
+
+            <label for="">Date</label>
+            <input type="date">
+
+            <br><br>
+
+                <input type="submit">
+                <input type="submit" value="clear">
+            
+
+            <br><br>
+             -->
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2026 My Website</p>
+    </footer>
+    </body>
+</html>
