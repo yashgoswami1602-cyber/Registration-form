@@ -1,11 +1,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width-device-width, initia-scale=1.0">
-        <title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">        <title>
             Home
         </title>
-        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="Register_form.css">
     </head>
     <body>
         <header>
@@ -63,7 +62,7 @@
                 </div>
              </div>
 
-                   <!-- Dropdown Select -->
+                  <!-- Dropdown Select -->
       <div class="form-group">
         <label for="country">Country</label>
         <select id="country" name="country">
@@ -74,48 +73,57 @@
         </select>
       </div>
 
-      <!-- Radio Buttons (Single Choice) -->
+      <!-- radio buttons (single choice)  -->
+
       <fieldset class="form-group">
-        <legend>Account Type</legend>
-        <label class="inline-label">
-          <input type="radio" name="account_type" value="personal" checked> Personal
-        </label>
-        <label class="inline-label">
-          <input type="radio" name="account_type" value="business"> Business
-        </label>
+        <legend>
+            <label for="" class="inline-label">
+                <input type="radio" name="account-type" value="personal" checked>Personal
+            </label>
+            <label for="" class="inline-label">
+                <input type="radio" name="account-type" value="business">Business
+            </label>
+        </legend>
       </fieldset>
 
-      <!-- Checkboxes (Multiple Choices) -->
+
+      <!-- checkboxes(multiple choices) -->
+
       <fieldset class="form-group">
         <legend>Interests</legend>
-        <label class="inline-label">
-          <input type="checkbox" name="interests" value="coding"> Web Development
+        <label for="" class="inline-label">
+            <input type="checkbox" name="interests" value="coding"> web development
         </label>
-        <label class="inline-label">
-          <input type="checkbox" name="interests" value="design"> UI/UX Design
+        <label for="" class="inline-label">
+            <input type="checkbox" name="interests" value="design">UI/UX Design
         </label>
-        <label class="inline-label">
-          <input type="checkbox" name="interests" value="ai"> Artificial Intelligence
+        <label for="" class="inline-label">
+            <input type="checkbox" name="interests" value="ai">Artificial Intelligence
         </label>
       </fieldset>
 
-      <!-- File Upload -->
+
+      <!-- file upload  -->
       <div class="form-group">
         <label for="resume">Upload Resume (PDF/DOC)</label>
-        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+        <input type="file" name="resume" accept=".pdf,.doc,.docx">
       </div>
 
-      <!-- Multi-line Textarea -->
+
+      <!-- multi-line textarea  -->
+
       <div class="form-group">
-        <label for="bio">Short Bio</label>
-        <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself..."></textarea>
+        <label for="bio"> Short Bio</label>
+        <textarea name="bio" id="bio" rows="4" placeholder="tell us a bit about yourself"></textarea>
       </div>
 
-      <!-- Submit & Reset Buttons -->
+      <!-- submit & reset buttons  -->
+
       <div class="button-group">
         <button type="submit" class="btn-submit">Submit Form</button>
         <button type="reset" class="btn-reset">Reset</button>
       </div>
+
 
 <!-- 
             <br><br>
